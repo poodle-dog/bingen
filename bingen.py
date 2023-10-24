@@ -23,7 +23,7 @@ def print_like_xxd(list_data):
             if (i % 2) == 1:
                 printlist.append(' ')
 
-        print(f'{(start*16):08x}:', ''.join(printlist))
+        print(f'{(start):08x}:', ''.join(printlist))
 
 
 def main(args):
