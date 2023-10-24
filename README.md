@@ -4,6 +4,10 @@ Rhymes with "engine".
 
 Quick and dirty Python script to generate raw binary files. 
 
+We have this cool AI generated logo, so you know it must be good.
+
+![please help I've been stuck in Vim for weeks](bingen_logo.png)
+
 # Quickstart
 
 Need to generate a file of `0x5a` to fill a 256 byte EEPROM? `bingen` can do that:
