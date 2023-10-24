@@ -1,9 +1,15 @@
 import argparse
+import os
+import sys
 
 def generate_chunk(value,length):
     return [ value ] * length 
 
 def write_binfile(list_data, filename):
+    dirname = os.path.dirname(filename)
+    if not os.path.exists(dirname):
+        sys.exit(f"Error: file path '{filename}' does not exist. Exiting.")
+
     with open(filename, 'wb') as f:
         for a in list_data:
             f.write(a.to_bytes(1, 'little'))
