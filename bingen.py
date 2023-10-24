@@ -41,6 +41,7 @@ def main(args):
         for a in range(args.length // args.chunk):
             list_data += generate_chunk(chunkval,args.chunk)
             chunkval += 1
+            chunkval &= 0xff
 
         modulus = args.length % args.chunk
         if modulus:
