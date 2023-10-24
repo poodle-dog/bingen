@@ -6,7 +6,7 @@ def generate_chunk(value,length):
 def write_binfile(list_data, filename):
     with open(filename, 'wb') as f:
         for a in list_data:
-            f.write(a)
+            f.write(a.to_bytes(1, 'little'))
 
 def print_like_xxd(list_data):
     # Prints all lines  
